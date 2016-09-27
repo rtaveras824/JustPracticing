@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey</title>
+	<link rel="stylesheet" href="/assets/css/style.css">	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id = "wrapper">
+		<div class = "header"> 
+			<h1>Survey Questions</h1>
+			<hr class="m-y-2">
+		</div>
+		<div class = "aboutYou">
+			<h2>About You</h2>
+			<form method="POST" action="/api/friends">
+				<fieldset class="form-group">
+					<label for="name">Name (Required)</label>
+					<input type="text" class="form-control" placeholder="Your Name" id="name" name="name" required>
+				</fieldset>
+				<fieldset class="form-group">
+					<label for="photo">Link to Photo Image (Required)</label>
+					<input type="text" class="form-control" placeholder="img link" id="photo" name="photo" required>
+				</fieldset>
+				<hr>
+				<h4><strong>Question 1</strong></h4>
+				<fieldset class="form-group">
+					<label for="q1">You are most attracted to people by their looks.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q1" name="scores[0]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 2</strong></h4>
+				<fieldset class="form-group">
+					<label for="q2">Your idea of a perfect date is an adventure outdoors.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q2" name="scores[1]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 3</strong></h4>
+				<fieldset class="form-group">
+					<label for="q3">A persons financial status is a make or break in the relationship.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q3" name="scores[2]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 4</strong></h4>
+				<fieldset class="form-group">
+					<label for="q4">You rarely get upset with people.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q4" name="scores[3]"">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 5</strong></h4>
+				<fieldset class="form-group">
+					<label for="q5">You feel better when you are in social situations.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q5" name="scores[4]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 6</strong></h4>
+				<fieldset class="form-group">
+					<label for="q6">The internet is a good medium for beginning a new relationship.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q6" name="scores[5]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 7</strong></h4>
+				<fieldset class="form-group">
+					<label for="q7">Finding someone who can make you laugh is very important.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q7" name="scores[6]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 8</strong></h4>
+				<fieldset class="form-group">
+					<label for="q8">Honesty and trust is number one in a relationship.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q8" name="scores[7]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 9</strong></h4>
+				<fieldset class="form-group">
+					<label for="q9">You feel overwhelmed by last minute plans.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q9" name="scores[8]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset>
+				<h4><strong>Question 10</strong></h4>
+				<fieldset class="form-group">
+					<label for="q10">Dogs are man's best friend.</label>
+					<br>
+					<div class="col-md-4">
+						<select class="form-control" id="q10" name="scores[9]">
+							<option>1 (Strongly Disagree)</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</fieldset><br>
+				<div id = "subBtn">
+					<a href="/"><button type="button" class="btn btn btn-lg"><span class="glyphicon glyphicon-fire"></span> Submit Survey</button></a>
+				</div>
+			</form>
+		</div>
+		<hr>
+		<a href="/api/friends">API Friends List</a> | <a href="https://github.com/lmsteele88/Friend-Finder" target="_blank">GitHub Repo</a>
+	</div>
+	<div id="friendModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">X</button>
+					<h2 class="modal-title">Best Match</h2>
+				</div>
+				<div class="modal-body">
+					<h2 id="friendName"></h2>
+					<img id="friendImg" src="https://s-media-cache-ak0.pinimg.com/236x/00/fa/82/00fa82a552e91b743c3ba0a8e8d147dd.jpg" width=500px alt="Friend">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$('#subBtn').on("click", function() {
+			var userInput = {
+				name: $('#name').val().trim(),
+				photo: $('#photo').val().trim(),
+				scores: [$('#q1').val().trim(), $('#q2').val().trim(), $('#q3').val().trim(), $('#q4').val().trim(), $('#q5').val().trim(), $('#q6').val().trim(), $('#q7').val().trim(), $('#q8').val().trim(), $('#q9').val().trim(), $('#q10').val().trim()]
+			}
+			var currentURL = window.location.origin;
+			$.post(currentURL + '/api/friends', userInput, function(data) {
+				$("#friendName").text(data.name);
+				$("#friendImg").attr("src", data.photo);
+				$("#friendModal").modal("show");
+			});
+			return false;
+		});
+	</script>
+</body>
+</html>

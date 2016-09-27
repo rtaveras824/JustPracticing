@@ -1,0 +1,29 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Friend Finder app- takes in results of users' surveys, then compares their answers with those from other users. The app will then display the name and picture of the user with the best overall match.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "path": "^0.12.7",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmsteele88/Friend-Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+  "node": "v4.4.5"
+  },
+  "bugs": {
+    "url": "https://github.com/lmsteele88/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/lmsteele88/Friend-Finder#readme"
+}
